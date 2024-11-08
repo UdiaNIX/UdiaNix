@@ -1,0 +1,176 @@
+/* Importação dos módulos de estilo */
+@import 'base.css';
+@import 'navbar.css';
+@import 'hero.css';
+@import 'buttons.css';
+@import 'services.css';
+@import 'metrics.css';
+@import 'expertise.css';
+@import 'testimonials.css';
+@import 'forms.css';
+@import 'footer.css';
+@import 'animations.css';
+@import 'responsive.css'; 
+
+:root {
+    /* Cores principais baseadas na bandeira de Uberlândia */
+    --color-primary: #003399;    /* Azul escuro */
+    --color-primary-light: #0044cc; /* Azul mais claro */
+    --color-primary-dark: #002266; /* Azul mais escuro para hover */
+    
+    --color-accent: #006633;     /* Verde escuro */
+    --color-accent-light: #008040; /* Verde mais claro */
+    --color-accent-dark: #004d26; /* Verde mais escuro para hover */
+    
+    /* Cores de estado */
+    --color-success: #28a745;
+    --color-success-dark: #1e7e34;
+    --color-danger: #dc3545;
+    --color-danger-dark: #bd2130;
+    --color-warning: #ffc107;
+    --color-warning-dark: #d39e00;
+    
+    /* Cores de suporte */
+    --color-dark: #1a1a1a;
+    --color-dark-lighter: rgba(255, 255, 255, 0.1);
+    --color-light: #ffffff;
+    --color-gray: #666666;
+    
+    /* Cores para botões */
+    --btn-primary-bg: var(--color-accent);
+    --btn-primary-color: var(--color-light);
+    --btn-primary-hover-bg: var(--color-accent-dark);
+    
+    --btn-secondary-bg: transparent;
+    --btn-secondary-color: var(--color-light);
+    --btn-secondary-border: var(--color-light);
+    --btn-secondary-hover-bg: var(--color-light);
+    --btn-secondary-hover-color: var(--color-primary);
+    
+    /* Breakpoints */
+    --mobile: 480px;
+    --tablet: 768px;
+    --laptop: 1024px;
+    --desktop: 1200px;
+} 
+
+/* Ajustes globais de responsividade */
+@media (max-width: 1200px) {
+    html {
+        font-size: 95%;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 90%;
+    }
+    
+    .container {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 85%;
+    }
+    
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 80%;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+} 
+
+/* Estilos base para botões */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 1.75rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+/* Variantes de botões */
+.btn-primary {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-primary-hover-bg);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--btn-secondary-bg);
+    color: var(--btn-secondary-color);
+    border-color: var(--btn-secondary-border);
+}
+
+.btn-secondary:hover {
+    background-color: var(--btn-secondary-hover-bg);
+    color: var(--btn-secondary-hover-color);
+    transform: translateY(-2px);
+}
+
+/* Tamanhos de botões */
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+/* Estados dos botões */
+.btn:disabled,
+.btn.disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Responsividade dos botões */
+@media (max-width: 768px) {
+    .btn {
+        padding: 0.75rem 1.5rem;
+    }
+    
+    .btn-lg {
+        padding: 0.875rem 1.75rem;
+    }
+    
+    .btn-sm {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        width: 100%;
+        padding: 0.75rem 1rem;
+    }
+} 

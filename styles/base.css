@@ -1,0 +1,26 @@
+:root {
+    /* Cores principais de Uberlândia */
+    --color-primary: #2D7339;     /* Verde cerrado */
+    --color-secondary: #F5A300;   /* Amarelo dourado */
+    --color-accent: #1B4B82;      /* Azul céu */
+    
+    /* Tons de suporte */
+    --color-green-light: #4CAF50;
+    --color-yellow-light: #FFD54F;
+    --color-blue-light: #64B5F6;
+    
+    /* Cores neutras */
+    --color-text: #2C3E50;
+    --color-text-light: #546E7A;
+    --color-background: #FAFAFA;
+    --color-white: #FFFFFF;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+    margin: 0;
+} 

@@ -1,0 +1,321 @@
+.contact-section {
+    background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+    color: var(--color-white);
+    padding: 4rem 5%;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    color: #1a1a1a;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.contact-form .form-subtitle {
+    color: #666;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper i {
+    position: absolute;
+    left: 1rem;
+    color: #666;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.input-wrapper textarea {
+    min-height: 120px;
+    padding-left: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group input[type="tel"] {
+    width: 100%;
+    height: 3.5rem;
+    padding: 0.75rem 1.25rem 0.75rem 3rem;
+    border: 2px solid #E0E0E0;
+    border-radius: 12px;
+    font-size: 1rem;
+    background: #F8FAFC;
+    color: var(--color-text);
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 1.25rem;
+    border: 2px solid #E0E0E0;
+    border-radius: 12px;
+    font-size: 1rem;
+    background: #F8FAFC;
+    resize: vertical;
+    color: var(--color-text);
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus,
+.form-group input[type="tel"]:focus {
+    border-color: var(--color-primary);
+    background: white;
+    box-shadow: 0 0 0 4px rgba(45, 115, 57, 0.1);
+    outline: none;
+}
+
+.validation-message {
+    display: none;
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    padding-left: 3rem;
+}
+
+.input-wrapper.error .validation-message {
+    display: block;
+}
+
+.input-wrapper.error input,
+.input-wrapper.error select,
+.input-wrapper.error textarea {
+    border-color: #dc3545;
+    background-color: #fff5f5;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 2rem;
+        margin: 1rem;
+        width: calc(100% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 1.5rem;
+    }
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent);
+}
+
+/* Estilos para o checkbox customizado */
+.checkbox-wrapper {
+    margin: 1rem 0;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    -webkit-user-select: none;
+    user-select: none;
+    color: var(--color-text);
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #F8FAFC;
+    border: 2px solid #E0E0E0;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.custom-checkbox:hover input ~ .checkmark {
+    background-color: #f0f0f0;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-text {
+    line-height: 1.4;
+    margin-top: 2px;
+}
+
+.checkbox-text a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.checkbox-text a:hover {
+    text-decoration: underline;
+}
+
+.checkbox-wrapper .validation-message {
+    padding-left: 35px;
+    margin-top: 0.5rem;
+}
+
+/* Estado de erro para o checkbox */
+.checkbox-wrapper.error .checkmark {
+    border-color: #dc3545;
+    background-color: #fff5f5;
+}
+
+.checkbox-wrapper.error .validation-message {
+    display: block;
+}
+
+/* Ajustes responsivos para formulários */
+@media (max-width: 1024px) {
+    .contact-form {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 3rem 5%;
+    }
+    
+    .contact-form {
+        padding: 2rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-group input,
+    .form-group select {
+        height: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 2rem 5%;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+        margin: 0.5rem;
+    }
+    
+    .form-group label {
+        font-size: 0.9rem;
+    }
+    
+    .input-wrapper i {
+        font-size: 1.1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 0.875rem;
+    }
+    
+    .checkbox-wrapper {
+        margin: 0.75rem 0;
+    }
+    
+    .custom-checkbox {
+        font-size: 0.85rem;
+    }
+}
+
+.contact-form .btn-primary {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-color);
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: var(--btn-primary-hover-bg);
+    transform: translateY(-2px);
+}

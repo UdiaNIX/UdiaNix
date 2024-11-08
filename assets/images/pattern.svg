@@ -1,0 +1,28 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="heroPattern" width="50" height="50" patternUnits="userSpaceOnUse">
+      <!-- Linhas diagonais -->
+      <line x1="0" y1="0" x2="50" y2="50" stroke="#0066cc" stroke-width="0.5" opacity="0.08"/>
+      <line x1="50" y1="0" x2="0" y2="50" stroke="#0066cc" stroke-width="0.5" opacity="0.08"/>
+      
+      <!-- Círculos decorativos -->
+      <circle cx="25" cy="25" r="12" fill="none" stroke="#0066cc" stroke-width="0.5" opacity="0.1"/>
+      <circle cx="25" cy="25" r="8" fill="none" stroke="#009c3b" stroke-width="0.5" opacity="0.1"/>
+      
+      <!-- Pontos nos cantos -->
+      <circle cx="0" cy="0" r="2" fill="#0066cc" opacity="0.1"/>
+      <circle cx="50" cy="0" r="2" fill="#0066cc" opacity="0.1"/>
+      <circle cx="0" cy="50" r="2" fill="#0066cc" opacity="0.1"/>
+      <circle cx="50" cy="50" r="2" fill="#0066cc" opacity="0.1"/>
+      
+      <!-- Pequenos detalhes -->
+      <circle cx="25" cy="25" r="1" fill="#009c3b" opacity="0.15"/>
+      <circle cx="25" cy="12" r="1" fill="#009c3b" opacity="0.15"/>
+      <circle cx="25" cy="38" r="1" fill="#009c3b" opacity="0.15"/>
+      <circle cx="12" cy="25" r="1" fill="#009c3b" opacity="0.15"/>
+      <circle cx="38" cy="25" r="1" fill="#009c3b" opacity="0.15"/>
+    </pattern>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#heroPattern)"/>
+</svg>
