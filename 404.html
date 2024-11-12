@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página não encontrada | UdiaNix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .error-container {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--color-background) 0%, var(--color-background-alt) 100%);
+        }
+
+        .error-icon {
+            font-size: 4rem;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .error-title {
+            font-size: 2.5rem;
+            color: var(--color-text);
+            margin-bottom: 1rem;
+        }
+
+        .error-message {
+            font-size: 1.2rem;
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--color-primary);
+            color: white;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .error-title {
+                font-size: 2rem;
+            }
+            
+            .error-message {
+                font-size: 1rem;
+            }
+
+            .error-actions {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" aria-label="Navegação principal">
+        <a href="/">
+            <img src="assets/images/logo.svg" alt="UdiaNix Logo" width="240" height="60">
+        </a>
+    </nav>
+
+    <main>
+        <div class="error-container">
+            <i class="fas fa-robot error-icon" aria-hidden="true"></i>
+            <h1 class="error-title">Ops! Página não encontrada</h1>
+            <p class="error-message">
+                Parece que você se aventurou em território desconhecido. 
+                A página que você está procurando pode ter sido movida, removida ou nunca existiu.
+            </p>
+            <div class="error-actions">
+                <a href="/" class="btn btn-primary">
+                    <i class="fas fa-home"></i>
+                    Voltar para Home
+                </a>
+                <a href="/#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i>
+                    Fale Conosco
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <!-- Coluna da Empresa -->
+        <div class="footer-column company-info">
+          <div class="footer-logo">
+            <img
+              src="assets/images/logo.svg"
+              alt="UdiaNix Logo"
+              width="240"
+              height="60"
+            />
+          </div>
+          <address>
+            <ul class="contact-list">
+              <li>
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <span>Res. Integração - Uberlândia, MG</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:weverton@udianix.com.br">weverton@udianix.com.br</a>
+              </li>
+              <li>
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <a href="tel:+5534988291040">(34) 98829-1040</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- Coluna de Links Rápidos -->
+        <div class="footer-column quick-links">
+          <h2>Links Rápidos</h2>
+          <nav aria-label="Links do rodapé">
+            <ul>
+              <li><a href="/#services">Nossos Serviços</a></li>
+              <li><a href="/#about">Sobre Nós</a></li>
+              <li><a href="/#contact">Contato</a></li>
+              <li><a href="/privacidade">Política de Privacidade</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Coluna Social -->
+        <div class="footer-column social">
+          <h2>Conecte-se Conosco</h2>
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/wevertonslima"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/weverton2dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://bsky.app/profile/wevertonslima.bsky.social"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Siga-nos no Bluesky"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3c3.4 .4 6.7 .9 10 1.3zM288 227.1C261.9 176.4 190.9 81.9 124.9 35.3C61.6-9.4 37.5-1.7 21.6 5.5C3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7c3.3-.5 6.6-.9 10-1.4c-3.3 .5-6.6 1-10 1.4C74.3 308.6-9.1 342.8 100.3 464.5C220.6 589.1 265.1 437.8 288 361.1c22.9 76.7 49.2 222.5 185.6 103.4c102.4-103.4 28.1-156-65.8-169.9c-3.3-.4-6.7-.8-10-1.3c3.4 .4 6.7 .9 10 1.3c64.1 7.1 133.6-15.1 153.2-80.7C566.9 194 576 75 576 58.4s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8C385.1 81.9 314.1 176.4 288 227.1z"
+                  />
+                </svg>
+                <span class="sr-only">Bluesky</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Udianix"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+                <span class="sr-only">GitHub</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 UdiaNix. Todos os direitos reservados.</p>
+        <p>
+          Desenvolvido com <i class="fas fa-heart" aria-hidden="true"></i> por
+          <a
+            href="https://linktr.ee/wevertonslima"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Weverton S. Lima</a
+          >
+        </p>
+      </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,71 @@
+# Dependências
+node_modules/
+vendor/
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Arquivos de log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos de IDE/Editor
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# Arquivos de build/dist
+dist/
+build/
+out/
+public/assets/
+
+# Arquivos de cache
+.cache/
+.sass-cache/
+*.css.map
+*.js.map
+
+# Arquivos temporários
+tmp/
+temp/
+
+# Arquivos de backup
+*.bak
+*.backup
+*~
+
+# Arquivos sensíveis
+send.php
+config.php
+*.pem
+*.key
+*.crt
+
+# Arquivos de mídia não otimizados
+assets/raw/
+*.psd
+*.ai
+*.sketch
+
+# Arquivos de teste
+coverage/
+.nyc_output/
+test-results/
+
+# Outros
+.htpasswd
+sitemap*.xml.gz 
+blog/
