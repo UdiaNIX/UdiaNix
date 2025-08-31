@@ -39,6 +39,28 @@
     .form-group select {
         height: 3.25rem;
     }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 1rem;
+        text-align: center;
+        box-sizing: border-box;
+        margin-top: 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
 
 @media (max-width: 480px) {
@@ -70,4 +92,4 @@
     .form-group textarea {
         font-size: 0.95rem;
     }
-} 
+}

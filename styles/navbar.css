@@ -36,4 +36,14 @@
 
 .nav-link:hover::after {
     width: 100%;
-} 
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--color-text);
+    cursor: pointer;
+    padding: 0;
+}
