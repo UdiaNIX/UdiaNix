@@ -1,21 +1,10 @@
 version: '3.8'
-
 services:
-  nginx:
-    image: nginx:alpine
-    container_name: meu-site-nginx
+  web:
+    image: php:8.2-apache
+    container_name: udianix-site-apache
     volumes:
-      - ./:/var/www/html:ro
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-    restart: always
-    networks:
-      - proxy-network
-
-  php:
-    image: php:8.2-fpm
-    container_name: meu-site-php
-    volumes:
-      - ./:/var/www/html:ro
+      - ./:/var/www/html
     restart: always
     networks:
       - proxy-network
