@@ -6,5 +6,8 @@ services:
       - ./:/usr/share/nginx/html:ro
     restart: always
     networks:
-      proxy-network:
-        external: true
+      - proxy-network
+
+networks:
+  proxy-network:
+    external: true
