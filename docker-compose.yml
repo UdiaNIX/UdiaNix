@@ -2,8 +2,9 @@ version: '3.8'
 services:
   web:
     image: nginx:alpine
-    ports:
-      - "80:80"
     volumes:
       - ./:/usr/share/nginx/html:ro
     restart: always
+    networks:
+      proxy-network:
+        external: true
