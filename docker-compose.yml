@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    image: udianix-site-img
+    restart: always
+    networks:
+      - proxy-network
+
+networks:
+  proxy-network:
+    external: true
