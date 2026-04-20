@@ -1,9 +1,11 @@
 version: '3.8'
 services:
   web:
-    image: nginx:alpine
+    image: python:3-alpine
+    command: python -m http.server 80
     volumes:
       - ./:/usr/share/nginx/html:ro
+    working_dir: /usr/share/nginx/html
     restart: always
     networks:
       - proxy-network
