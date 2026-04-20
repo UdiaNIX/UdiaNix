@@ -3,7 +3,7 @@ services:
   web:
     image: nginx:alpine
     ports:
-      - "8080:80"
+      - "80:80"
     volumes:
       - ./:/usr/share/nginx/html:ro
     restart: always
