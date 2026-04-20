@@ -3,7 +3,7 @@ services:
   web:
     image: nginx:alpine
     volumes:
-      - meu-site-volume:/usr/share/nginx/html:ro
+      - udianix-web-site-volume:/usr/share/nginx/html:ro
     restart: always
     networks:
       - proxy-network
