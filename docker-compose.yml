@@ -3,12 +3,14 @@ services:
   web:
     image: nginx:alpine
     volumes:
-      - ./:/usr/share/nginx/html:ro
+      - meu-site-volume:/usr/share/nginx/html:ro
     restart: always
     networks:
       - proxy-network
-    user: root
-    command: ["nginx", "-g", "daemon off;"]
+
+volumes:
+  udianix-web-site-volume:
+    external: true
 
 networks:
   proxy-network:
